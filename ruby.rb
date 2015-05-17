@@ -1,5 +1,6 @@
 loop do
 nums = gets.strip.split(/\s+/).map(&:to_f)
+
 if (nums[0]!=-1 and nums[1]!=-1) then
 c=(nums[0]/nums[1])
 perc=c*100
@@ -18,7 +19,7 @@ when 17
 when 16
 	str[8..11]=s.to_s+"%"
 end
-print str
+puts str
 else
 break
 end
