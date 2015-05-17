@@ -1,15 +1,16 @@
 loop do
 nums = gets.strip.split(/\s+/).map(&:to_f)
-
-if (nums[0]!=-1 and nums[1]!=-1) then
-c=(nums[0]/nums[1])
-perc=c*100
+m =nums[0]
+n=nums[1]
+if (m!=-1 and n!=-1) then
+c=(m/n)
+perc=c*100.0
 str=""
 s= perc.round(0)
-n= 20*c
-pc=20-s.to_s.length
+nh=20*c
+pc=20-(s.to_s.length+1)
 for i in 0..19 
-	if (i<n) then str[i]="*" else str[i] = "-" end
+	if (i<nh) then str[i]="*" else str[i] = "-" end
 end
 case pc
 when 18
