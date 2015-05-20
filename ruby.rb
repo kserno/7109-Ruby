@@ -7,7 +7,8 @@ c=(m/n)
 perc=c*100.0
 str=""
 s= perc.round(0)
-nh=20*c
+nh=(20*c).round(0)
+mod = s % 5
 pc=20-(s.to_s.length+1)
 for i in 0..19 
 	if (i<nh) then str[i]="*" else str[i] = "-" end
